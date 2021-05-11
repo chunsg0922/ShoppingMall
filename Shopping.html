@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>전씨몰</title>
+        <link href="css\style.css" rel="stylesheet" type="text/css" />
+        <link href="css\detail.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <script src="script.js"></script>
+        
+        <div class="page">
+        <!-- 네비게이션 부분 -->
+        <div id="nav">
+            <a class="nav_logo" href="Main.html">
+                <img src="img\logo.png" alt="로고" style="width: 60px; height:auto;" href="/">
+              </a>
+              <div class="nav_title"><a id="title" href="Main.html" >전씨몰</a></div>
+          <div class="nav_right_item">
+            <a href="Main.html" class="nav_item">메인페이지</a>|
+            <a href="Login.html" class="nav_item">로그인</a>|
+            <a href="Signup.html" class="nav_item">회원가입</a>
+        </div>  
+      </div>
+
+      
+      
+        <!-- 사이드바 부분 -->
+        <div id="aside">
+          <div class="side_menu_box">
+            <div class="side_menu">
+              <div class="side_category">
+              <a>
+                <strong class="title">상의</strong>
+                <span class="title_eg">Tops</span>
+              </a>
+            </div>
+            <div class="side_category">
+              <a>
+                <strong class="title">하의</strong>
+                <span class="title_eg">Bottoms</span>
+              </a>
+            </div>
+            <div class="side_category">
+              <a>
+                <strong class="title">가방</strong>
+                <span class="title_eg">Bags</span>
+              </a>
+            </div>
+            <div class="side_category">
+              <a>
+                <strong class="title">신발</strong>
+                <span class="title_eg">Shoes</span>
+              </a>
+            </div>
+            <div class="side_category">
+              <a>
+                <strong class="title">악세서리</strong>
+                <span class="title_eg">Accessory</span>
+              </a>
+            </div>
+
+          </div>
+          </div>
+        </div>
+
+        <!-- 섹션(내용) 부분 -->
+        <main class="product_item_detail">
+            <div class="product_item_view">
+                <div class="product_item_imgTab">
+                    <button type="button" class="product_imgBtn" style="height: inherit;">
+                    <img src="img\옷1.jpg" class="product_img" alt="상의1">
+                    </button>
+                </div>
+
+                <div class="product_item_txtTab">
+                    <div class="product_item_discountTxt">10% 할인
+                    </div>
+                    <span class="product_item_title">라운드 반팔티</span>
+                    <div class="product_item_price">
+                        <div>
+                        <span class="product_item_discount_price">
+                            9,800 원
+                        </span>
+                        <span class="product_item_origin_price">
+                            10,900 원
+                        </span>
+                    </div>      
+                </div>
+                <hr class="product_detail_hr">
+                    <div class="product_count_multiple">
+                        <p class="option_choice">옵션선택</p>
+                        <select class="option_select" required data-index="0">
+                            <option disabled value>color</option>
+                            <option value="그레이">그레이</option>
+                            <option value="카키">카키</option>
+                            <option value="아이보리">아이보리</option>
+                        </select>
+                        <select class="option_select" required disabled data-index="1">
+                            <option disabled value>size</option>
+                            <option value="M(95-100)">M(95-100)</option>
+                            <option value="L(100-105)">L(100-105)</option>
+                            <option value="XL(105-110)">XL(105-110)</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+      </body>
+</html>
